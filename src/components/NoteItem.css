@@ -1,0 +1,48 @@
+#root,
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+  margin: 30px 1.5%;
+  background-color: #e4eb2d;
+  border: 1px solid gray;
+  min-height: 250px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  margin: 10px 0;
+}
+.card-text {
+  /* display: flex; */
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 10px 25px;
+  letter-spacing: 1px;
+  white-space: pre-wrap;
+}
+.card-footer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  margin-left: 25px;
+}
+.delete-icon {
+  margin-right: 25px;
+  cursor: pointer;
+}

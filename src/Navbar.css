@@ -1,0 +1,25 @@
+.Navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    border: 1px slategrey solid;
+}
+.Title{
+    display: flex;
+    align-items: center;
+    text-align:center;
+    margin-left: 100px;
+}
+.mode{
+    display: flex;
+    align-items: center;
+    text-align:center;
+    /* margin-right: 100px; */
+    /* background-color:  rgb(95, 203, 68); */
+    background-color: #a39d9d;
+    padding:15px 20px;
+    border-radius: 20px;
+    height:10px;
+    margin:auto 100px;
+    cursor: pointer;
+}
