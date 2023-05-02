@@ -1,42 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.container{
+.container {
   margin-left: auto;
   margin-right: auto;
-  width:90%;
-  padding:15px auto;
+  width: 90%;
+  padding: 15px auto;
 }
-.search{
+ .search {
   width: 100%;
-  margin:20px auto;
+  margin: 20px auto;
   border-radius: 5px;
-  height: 30px;
+  height: 35px;
   line-height: 30px;
   background-color: #a39d9d;
   display: flex;
   text-align: center;
   align-items: center;
 }
-.search input{
+.search input {
   width: 95%;
   background-color: #a39d9d;
   border: none;
   font-size: 16px;
 }
-.search input:focus{
+
+.search input:focus {
   outline: none;
 }
-.search-icon{
-margin:0 5px;
+.search-icon {
+  margin: 0 5px;
+}
+.dark-mode {
+  height: 100vh;
+  background-color: #292827;
+  transition: all ease-out 0.5s;
+}
+.dark-mode h1 {
+  color: white;
+  transition: all ease-out 0.5s;
+}
+
+.dark-mode .delete-icon {
+  color: white;
+  transition: all ease-out 0.5s;
+}
+.toggle {
+  /* display: flex; */
+  align-items: center;
+  background-color:black;
+  border-radius:15px;
+  height: 30px;
+  margin:auto 0;
+  padding: 0;
+  width: 70px;
+}
+.mode{
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background-color:white;
+  
+}
+.dark-mode .toggle{
+  background-color: white;
+  transition: all ease-out 0.5s;
+}
+.dark-mode .mode{
+  background-color:black;
+  translate:40px;
+  transition: all ease-out 0.5s;
+}
+.dark-mode .searchs{
+  color:#fff;
+  background-color:#fff;
+  transition: all ease-out 0.5s;
+}
+.dark-mode .search{
+  background-color:#fff;
+  transition: all ease-out 0.5s;
+}
+.light-mode .search{
+  background-color:#a39d9d;
+  transition: all ease-out 0.5s;
+}
+.light-mode .searchs{
+  color:#282727;
+  transition: all ease-out 0.5s;
+}
+.light-mode{
+  height: 100vh;
+  transition: all ease-out 0.5s;
+}
+.light-mode .mode{
+transition: all ease-out 0.5s;
+}
+.light-mode .toggle{
+  transition: all ease-out 0.5s;
+}
+.light-mode h1 { 
+  transition: all ease-out 0.5s;
+}
+.light-mode .search-icon {
+  transition: all ease-out 0.5s;
+}
+.light-mode .delete-icon {
+  transition: all ease-out 0.5s;
+}
+.light-mode .search{
+
 }

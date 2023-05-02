@@ -7,7 +7,7 @@ function Search(props) {
   return (
     <div className='search'>
         <MdSearch size="1.3em" className='search-icon' />
-      <input type="search"  placeholder='search' onChange={handleSearch} />
+      <input type="search" className='searchs'  placeholder='search' onChange={handleSearch} />
     </div>
   )
 }

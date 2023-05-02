@@ -1,11 +1,15 @@
 import React from "react";
 import './Navbar.css'
-function Navbar() {
+function Navbar(props) {
+  const handleChangeMode=()=>{
+    props.setmode(!props.mode)
+  }
   return (
     <div>
-      <div className="Navbar">
+      <div className="Navbar container">
         <h1 className="Title">Notes</h1>
-        <button className="mode">Toggle Mode</button>
+       <div className="toggle"> 
+       <button className="mode" onClick={handleChangeMode}></button></div>
       </div>
     </div>
   );

@@ -56,7 +56,6 @@ function AddNote(props) {
   const day = date.getDate();
   const month = date.getMonth() + 1;
   const year = date.getFullYear();
-  console.log(date.toLocaleDateString);
   const handleonChange=(e)=>{
     const length = 200-e.target.value.length;
     if (length >= 0) {

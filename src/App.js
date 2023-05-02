@@ -9,32 +9,47 @@ function App() {
   const [data, setdata] = React.useState([
     {
       id: nanoid(),
-      note: "I want to  note is text and hfgshfghsfghgs blah bla 1",
+      note: "This is test note 1",
       date: "30/4/2023",
     },
     {
       id: nanoid(),
-      note: "I want to  note is text and blah bla 2",
+      note: "This is test note 2",
       date: "10/4/2023",
     },
     {
       id: nanoid(),
-      note: "I want to  note is text and blah sdfgsdfgdsfkhjkjhg jghjghjfhgjghfbla 3",
+      note: "This is test note 3",
       date: "20/4/2023",
     },
   ]);
-  const [search,setsearch]=React.useState('')
+
+  React.useEffect(() => {
+    const saveddata = JSON.parse(localStorage.getItem("react-note-data"));
+    if (saveddata) {
+      setdata(saveddata);
+      console.log(saveddata);
+    }
+  }, []);
+
+  React.useEffect(() => {
+    localStorage.setItem("react-note-data", JSON.stringify(data));
+    console.log(data)
+  }, [data]);
+
+  const [mode, setmode] = React.useState(false);
+  const [search, setsearch] = React.useState("");
   return (
-    <div>
-      <Navbar />
+    <div className={mode ? "dark-mode" : "light-mode"}>
+      <Navbar mode={mode} setmode={setmode} />
       <div className="container">
-      <Search setsearch={setsearch} />
-      <Note data={
-        data.filter(m=>m.note.toLowerCase().includes(search))
-      } 
-        setdata={setdata}/>
-        </div>
+        <Search setsearch={setsearch} />
+        <Note
+          data={data.filter((m) => m.note.toLowerCase().includes(search))}
+          setdata={setdata}
+        />
       </div>
+    </div>
   );
 }
 
