@@ -82,7 +82,7 @@ code {
   transition: all ease-out 0.5s;
 }
 .dark-mode .searchs{
-  color:#fff;
+  /* color:#fff; */
   background-color:#fff;
   transition: all ease-out 0.5s;
 }
