@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import "./App.css";
 import Navbar from "./Navbar";
 import Search from "./components/Search";
-// import AddNote from './components/AddNote'
+import AddNotes from './components/AddNotes'
 function App() {
   const [data, setdata] = React.useState([
     {
@@ -56,6 +56,7 @@ function App() {
         setdata={setdata}
       />
     </div>
+    <AddNotes data={data} setdata={setdata}/>
   </div>
   );
 }
